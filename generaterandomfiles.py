@@ -18,7 +18,7 @@ def generate_random_file(tamanho):
     tempo =  int(time() - comeco)
     arquivo.close()
 
-    #Reabre o arquivo para realizar calcular o MD5 dele.
+    #Reabre o arquivo para realizar calcular os Hashes dele.
     arquivo = open("RandomFile.bin", "rb")
     temp = arquivo.read()
     hash_md5 = md5(temp).hexdigest()
